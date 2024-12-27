@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahi's Exam Timetable</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: #00796b;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      width: 90%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    table th {
+      background: #00796b;
+      color: white;
+      font-weight: 700;
+    }
+
+    table tr:nth-child(even) {
+      background: #e0f7fa;
+    }
+
+    table tr:nth-child(odd) {
+      background: #ffffff;
+    }
+
+    table tr:hover {
+      background: #b2dfdb;
+    }
+
+    .icon {
+      font-size: 18px;
+      margin-right: 8px;
+      color: #00796b;
+    }
+
+    .special-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #00796b;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #00796b;
+      color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      width: 90%;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #e0f7fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .header h1 {
+        font-size: 1.8rem;
+      }
+
+      .header p {
+        font-size: 1rem;
+      }
+
+      table th, table td {
+        font-size: 0.85rem;
+        padding: 10px;
+      }
+
+      .special-note {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Mahi's Exam Timetable</h1>
+    <p>Your Journey to Success Starts Here!</p>
+  </div>
+
+  <div class="container">
+    <h2 style="text-align: center; color: #00796b;">Shreyarth University | Semester I</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Course Code</th>
+          <th>Course Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="icon">📅</span> 24.12.2024</td>
+          <td><span class="icon">⏰</span> 2:00 p.m. - 4:00 p.m.</td>
+          <td>IKS101-1C</td>
+          <td>Indian Knowledge System-I</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📅</span> 26.12.2024</td>
+          <td><span class="icon">⏰</span> 2:00 p.m. - 4:00 p.m.</td>
+          <td>SEC101-1C</td>
+          <td>Soft Skills</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📅</span> 27.12.2024</td>
+          <td><span class="icon">⏰</span> 2:00 p.m. - 4:00 p.m.</td>
+          <td>AEC101-1C</td>
+          <td>Basics of English Grammar</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📅</span> 28.12.2024</td>
+          <td><span class="icon">⏰</span> 2:00 p.m. - 4:00 p.m.</td>
+          <td>MDC101-1C</td>
+          <td>Business Mathematics</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📅</span> 30.12.2024</td>
+          <td><span class="icon">⏰</span> 2:00 p.m. - 4:00 p.m.</td>
+          <td>MGM101-1C</td>
+          <td>Introduction to Management Thought and Forms of Business</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📅</span> 31.12.2024</td>
+          <td><span class="icon">⏰</span> 2:00 p.m. - 4:00 p.m.</td>
+          <td>FIM101-1C</td>
+          <td>Financial Accounting</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📅</span> 01.01.2025</td>
+          <td><span class="icon">⏰</span> 2:00 p.m. - 4:00 p.m.</td>
+          <td>MGE101-1C</td>
+          <td>Principles of Micro Economics</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="special-note">All the best, Mahi! You've got this! 🌟</p>
+  </div>
+
+  <footer>
+    Made with ❤️ by robiii for Mahi | <a href="#">Home</a>
+  </footer>
+</body>
+  </html>
